@@ -1,0 +1,20 @@
+header .container{
+  background-color: #0e2fa9;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  -webkit-box-shadow: 0px 8px 16px -10px rgba(0,0,0,0.75);
+  box-shadow: 0px 8px 16px -10px rgba(0,0,0,0.75);
+}
+
+.btn-menu {
+  background-color: #FFF;
+  border-color: transparent;
+  width: 60px;
+
+}
+
+.btn-menu-icon {
+  color: #FFF;
+}

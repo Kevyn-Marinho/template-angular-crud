@@ -1,0 +1,41 @@
+<section class="container">
+  <div class="title">
+    <div class="title-content">
+      <div class="close-button-wrapper">
+        <span class="close-button" (click)="closeModal()">X</span>
+      </div>
+      <h2>Cadastro</h2>
+      <span *ngIf="produto.id > 0">Código do Produto: {{produto.id}}</span>
+    </div>
+    <hr style="margin: 4px;">
+  </div>
+
+
+  <div class="content">
+    <div *ngIf="mensagem" [ngClass]="(sucesso) ? 'sucesso' : 'erro'">{{mensagem}}</div>
+    <img *ngIf="produto.imagem" class="produto-imagem" src="{{produto.imagem}}">
+    <br>
+    <div>
+      <span>Nome do Produto</span>
+      <input [(ngModel)]="produto.nome">
+    </div>
+    <br>
+    <div>
+      <span>Valor do Produto</span>
+      <input type="number" name="valor" id="valor" [(ngModel)]=produto.valor>
+    </div>
+    <br>
+    <div>
+      <span>Imagem</span>
+      <input type="file" ccept="image/*" id="imagem" (change)="converterImagem($event)">
+    </div>
+    <div class="actions">
+      <button id="salvar" *ngIf="produto.id > 0" (click)="Salvar()">Salvar</button>
+      <button id="remover" *ngIf="produto.id > 0" (click)="Remover()">Remover</button>
+      <button id="adicionar" *ngIf="0 >= produto.id" (click)="Adicionar()">Adicionar</button>
+      <button id="limpar" (click)="Limpar()">Limpar</button>
+    </div>
+
+  </div>
+
+</section>

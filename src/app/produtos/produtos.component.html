@@ -1,0 +1,22 @@
+<div class="container">
+  <section class="produtos-lista-wrapper">
+    <div class="title">
+      <h2>Produtos</h2>
+      <hr>
+    </div>
+
+    <div *ngIf="mensagem && produtos.length < 1" class="mensagem"><p>{{mensagem}}</p></div>
+    <div *ngIf="!mensagem && produtos.length < 1" class="mensagem"><p>Nenhum item cadastrado</p></div>
+    <div *ngIf="produtos.length > 0" class="produtos-lista">
+      <app-produto *ngFor="let produto of produtos" [produto]="produto" (click)="selecionar(produto)"></app-produto>
+    </div>
+  </section>
+
+  <section [ngClass]="(open) ? 'open' : 'hide'" class="produtos-cadastro-wrapper">
+    <app-produto-cadastro
+      [(produto)]="produtoSelecionado"
+      (close)="close($event)"
+      (produtoRemovido)="remover($event)"
+      (produtoAdicionado)="adicionar($event)"></app-produto-cadastro>
+  </section>
+</div>

@@ -1,0 +1,11 @@
+<div class="card">
+    <div class="card-header">
+      <img class="produto-imagem" src="{{produto.imagem}}"  >
+    </div>
+    <div class="card-content">
+      <span class="produto-titulo">{{produto.nome}}</span>
+      <br>
+      <span class="produto-valor">R$ {{produto.valor?.toFixed(2)?.replace('.',',')}}</span>
+    </div>
+
+</div>
