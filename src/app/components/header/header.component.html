@@ -2,8 +2,9 @@
   <div class="container">
     <img class="logo" src="../../../assets/sitemercado.png" />
 
-    <nav >
-      <a></a>
+    <nav>
+      <a (click)="navigate('produtos')">Produtos</a>
+      <a (click)="navigate('fornecedor')">Fornecedor</a>
     </nav>
     <button mat-icon-button class="btn-menu" aria-label="Example icon-button with menu icon"
       (click)="Sair()">

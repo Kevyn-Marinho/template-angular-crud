@@ -6,9 +6,10 @@ import { MatCardModule } from '@angular/material/card';
 
 import { ProdutoComponent } from './produto/produto.component';
 import { HeaderComponent } from './header/header.component';
+import { CardListComponent } from './card-list/card-list.component';
 
 @NgModule({
-  declarations: [ProdutoComponent, HeaderComponent],
+  declarations: [ProdutoComponent, HeaderComponent, CardListComponent],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -17,6 +18,7 @@ import { HeaderComponent } from './header/header.component';
   ],
   exports: [
     ProdutoComponent,
-    HeaderComponent]
+    HeaderComponent,
+    CardListComponent]
 })
 export class ComponentsModule { }

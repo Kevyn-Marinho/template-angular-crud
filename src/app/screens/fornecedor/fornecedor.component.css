@@ -1,0 +1,50 @@
+.container {
+  width: 90%;
+  padding: 15px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.mensagem{
+  margin: 25px;
+}
+.title {
+  margin: 25px;
+}
+
+.fornecedor-lista {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+}
+
+@media screen and (max-width: 768px){
+  .fornecedor-lista-wrapper {
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+  }
+  .fornecedor-cadastro-wrapper {
+    width: 100%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+}
+@media screen and (min-width : 768px){
+  .fornecedor-lista-wrapper{
+
+    width: 60%;
+    background-color: #FFFFFF;}
+
+  .fornecedor-cadastro-wrapper {
+    width: 39%;
+    background-color: #FFFFFF;
+  }
+}

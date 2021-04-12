@@ -4,11 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProdutosModule } from './produtos/produtos.module';
 import { ComponentsModule } from './components/components.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginModule } from './login/login.module';
 import { HomeComponent } from './templates/home/home.component';
+import { ScreensModule } from './screens/screens.module';
 import { AutenticacaoComponent } from './templates/autenticacao/autenticacao.component';
 
 @NgModule({
@@ -21,10 +19,8 @@ import { AutenticacaoComponent } from './templates/autenticacao/autenticacao.com
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ProdutosModule,
-    LoginModule,
     ComponentsModule,
-    BrowserAnimationsModule
+    ScreensModule
   ],
   providers: [],
   bootstrap: [AppComponent]

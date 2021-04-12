@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MatGridListModule } from '@angular/material/grid-list';
 
-import { ComponentsModule } from '../components/components.module';
+import { ComponentsModule } from '../../components/components.module';
 import { ProdutosComponent } from './produtos.component';
 import { ProdutoCadastroComponent } from './produto-cadastro/produto-cadastro.component';
 
